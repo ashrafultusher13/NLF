@@ -274,12 +274,7 @@ a {
   animation-play-state: paused;
 }
 
-
-
 /* ABOUT */
-.about {
-  /* background-color: white; */
-}
 
 .about-content {
   display: flex;
@@ -554,8 +549,6 @@ a {
   color: #b8cbd9;
   font-size: 13px;
 }
-
-
 
 /* MOBILE RESPONSIVE */
 @media (max-width: 600px) {
