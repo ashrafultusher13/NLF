@@ -84,7 +84,8 @@ a {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 25px;
+  justify-content: space-between;
+  gap: 100px;
 }
 
 .nav-register {
@@ -469,7 +470,7 @@ a {
   font-weight: bold;
 }
 
-/* FOOTER */
+/* FOOTER
 .footer {
   padding: 40px 8%;
   text-align: center;
@@ -480,6 +481,131 @@ a {
 .copyright {
   margin-top: 15px;
   font-size: 13px;
+} */
+/* FOOTER */
+.footer {
+  background-color: #244d36;
+  color: white;
+  padding: 60px 10% 20px;
+}
+
+/* Footer Main Content */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  padding-bottom: 45px;
+}
+
+/* Left Side */
+.footer-about {
+  max-width: 400px;
+}
+
+.footer-logo {
+  display: inline-block;
+  background-color: white;
+  color: #164d78;
+  padding: 10px 25px;
+  border-radius: 8px;
+  margin-bottom: 18px;
+}
+
+.footer-about p {
+  color: #b8cbd9;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  gap: 12px;
+}
+
+.social-links a {
+  width: 42px;
+  height: 42px;
+  background-color: #28618a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Quick Links */
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 150px;
+}
+
+.footer-links h3 {
+  color: #d9c36b;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #b8cbd9;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+/* Bottom Section */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 25px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom p {
+  color: #b8cbd9;
+  font-size: 13px;
+}
+
+/* Back to Top */
+.back-to-top {
+  background-color: #d93628;
+  color: white;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  font-size: 24px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+  .footer {
+    padding: 40px 6% 20px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .footer-bottom {
+    gap: 15px;
+    align-items: center;
+  }
+
+  .footer-bottom p {
+    font-size: 11px;
+  }
 }
 
 /* MOBILE RESPONSIVE DESIGN */
