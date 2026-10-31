@@ -574,18 +574,7 @@ a {
   font-size: 13px;
 }
 
-/* Back to Top */
-.back-to-top {
-  background-color: #d93628;
-  color: white;
-  width: 45px;
-  height: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 7px;
-  font-size: 24px;
-}
+
 
 /* MOBILE RESPONSIVE */
 @media (max-width: 600px) {
