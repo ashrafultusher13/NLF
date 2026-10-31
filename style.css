@@ -218,6 +218,7 @@ a {
 }
 /* SPONSOR SECTION */
 .sponsors {
+  background-color: white;
   padding: 40px 0;
   overflow: hidden;
   text-align: center;
@@ -273,31 +274,11 @@ a {
   animation-play-state: paused;
 }
 
-/* .sponsors {
-  text-align: center;
-}
 
-.sponsor-list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-top: 25px;
-}
-
-.sponsor-item {
-  width: 150px;
-  height: 85px;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #d5e2d1;
-} */
 
 /* ABOUT */
 .about {
-  background-color: white;
+  /* background-color: white; */
 }
 
 .about-content {
