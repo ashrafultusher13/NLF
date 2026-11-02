@@ -5,11 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>National Language Feast 2026 | BAU</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- ANNOUNCEMENT BAR -->
     <div class="announcement">
-      <p>Don't Miss Out!</p>
+      <p><i class="fa-solid fa-bullhorn" id="mike"></i>DON'T MISS OUT!</p>
       <p>Registration Ends on 30 February</p>
     </div>
 
@@ -19,17 +27,28 @@
         <div class="logo">
           <img src="images/logo2.jpg" alt="NLF 2026 Logo" />
         </div>
-        <p>NLF26</p>
+        <p class="anton-regular">NLF26</p>
       </a>
 
       <nav class="nav-links" id="navLinks">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#segments">Segments</a>
-        <a href="#contact">Contact</a>
-        <a class="nav-register" href="#segments">Register Now</a>
+        <a href="index.html">Home</a>
+
+        <div class="nav-dropdown">
+          <a href="#" class="dropdown-toggle">
+            About <i class="fa-solid fa-chevron-down"></i>
+          </a>
+
+          <div class="dropdown-menu">
+            <a href="nlf.html">About NLF</a>
+            <a href="baulc.html">About BAULC</a>
+            <a href="sponsors.html">Sponsors</a>
+          </div>
+        </div>
+
+        <a href="segments.html">Segments</a>
+        <a href="contacts.html">Contact</a>
+        <a class="nav-register" href="segments.html">Register Now</a>
       </nav>
-      
 
       <button class="menu-button" id="menuButton" type="button">Menu</button>
     </header>
@@ -40,7 +59,7 @@
         <p class="small-title">
           BANGLADESH AGRICULTURAL UNIVERSITY LANGUAGE CLUB
         </p>
-        <h1>National<br />Language Feast <span>2026</span></h1>
+        <h1>National<br />Language Fest <span>2026</span></h1>
 
         <p class="hero-description">
           A celebration of language, culture, creativity and communication.
@@ -58,85 +77,85 @@
           <img src="images/logo2.jpg" alt="NLF 2026 Logo" />
         </div>
 
+        <!-- REGISTRATION COUNTDOWN -->
         <div class="countdown-box">
-          <h2>Event Begins In</h2>
-          <div class="countdown">
-            <div><strong id="days">00</strong><span>Days</span></div>
-            <div><strong id="hours">00</strong><span>Hours</span></div>
-            <div><strong id="minutes">00</strong><span>Minutes</span></div>
-            <div><strong id="seconds">00</strong><span>Seconds</span></div>
+          <div class="countdown-header">
+            <h3>◷ REGISTRATION COUNTDOWN</h3>
+            <span class="countdown-badge">CLOSING SOON</span>
           </div>
-          <p class="date-note">Date will be announced soon</p>
-        </div>
-      </div>
-    </section>
 
-    <!-- STATISTICS SECTION -->
-    <section class="statistics section">
-      <div class="stat-item">
-        <h2>999+</h2>
-        <p>Competition Participants Expected</p>
-      </div>
-      <div class="stat-item">
-        <h2>999+</h2>
-        <p>Session Participants Expected</p>
-      </div>
-      <div class="stat-item">
-        <h2>999+</h2>
-        <p>Fair Participants Expected</p>
-      </div>
-      <div class="stat-item">
-        <h2>30+</h2>
-        <p>Universities</p>
-      </div>
-      <div class="stat-item">
-        <h2>2 Days</h2>
-        <p>Long Event</p>
-      </div>
-    </section>
+          <div class="countdown-timer">
+            <div class="time-box">
+              <h2 id="days">00</h2>
+              <p>DAYS</p>
+            </div>
 
-    
+            <div class="time-box">
+              <h2 id="hours">00</h2>
+              <p>HOURS</p>
+            </div>
 
-    <!-- ABOUT THE CONTEST -->
-    <section class="about section" id="about">
-      <div class="section-heading">
-        <p class="small-title">GET TO KNOW THE FESTIVAL</p>
-        <h2>About the Contest</h2>
-      </div>
+            <div class="time-box">
+              <h2 id="minutes">00</h2>
+              <p>MINS</p>
+            </div>
 
-      <div class="about-content">
-        <div class="about-text">
-          <h3>National Language Feast 2026 at BAU</h3>
-          <p>
-            Write a short introduction about National Language Feast here.
-            Explain the purpose of the festival and what visitors can expect.
+            <div class="time-box">
+              <h2 id="seconds">00</h2>
+              <p>SECS</p>
+            </div>
+          </div>
+
+          <a href="#" class="register-button">REGISTER FOR FEST</a>
+
+          <p class="countdown-note">
+            Open to all university & college delegates nationwide
           </p>
         </div>
-
-        <div class="about-gallery">
-          <div class="photo-placeholder">
-            <img src="images/nlf1.jpg" alt="Photo 1" />
-          </div>
-          <div class="photo-placeholder">
-            <img src="images/nlf2.jpg" alt="Photo 2" />
-          </div>
-          <div class="photo-placeholder">
-            <img src="images/nlf3.jpg" alt="Photo 3" />
-          </div>
-          <div class="photo-placeholder">
-            <img src="images/nlf4.jpg" alt="Photo 4" />
-          </div>
-        </div>
       </div>
     </section>
 
+    <!-- STATISTICS & ABOUT SECTION -->
+    <section class="statistics section">
+      <div class="section-heading">
+        <h1>ABOUT THE FESTIVAL</h1>
+        <p>
+          National Language Feast 2026 is an exciting event that celebrates the
+          rich diversity of languages in Bangladesh. It brings together
+          students, faculty, and language enthusiasts from various universities
+          and colleges to participate in a series of engaging activities and
+          competitions.
+        </p>
+      </div>
+      <div class="statitems">
+        <div class="stat-item">
+          <h2>1500+</h2>
+          <p>PARTICIPANTS</p>
+        </div>
+        <div class="stat-item">
+          <h2>10+</h2>
+          <p>FLAGSHIP SEGMENTS</p>
+        </div>
+
+        <div class="stat-item">
+          <h2>30+</h2>
+          <p>UNIVERSITIES</p>
+        </div>
+        <div class="stat-item">
+          <h2>2 DAYS</h2>
+          <p>LONG EVENT</p>
+        </div>
+      </div>
+    </section>
+    <
+
     <!-- SPONSOR SECTION -->
-    <section class="sponsors">
+    <!-- <section class="sponsors">
       <h2>Our Sponsors</h2>
 
       <div class="sponsor-slider">
         <div class="sponsor-track">
-          <!-- First Set -->
+         
           <div class="sponsor-item">
             <img src="images/somoytv.webp" alt="Sponsor 1" />
           </div>
@@ -159,7 +178,7 @@
             <img src="images/ghurifilms.png" alt="Sponsor 4" />
           </div>
 
-          <!-- Duplicate Set for Infinite Loop -->
+          
           <div class="sponsor-item">
             <img src="images/ysse.jpg" alt="Sponsor 1" />
           </div>
@@ -183,26 +202,39 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <!-- HOSTED BY -->
+    <!-- HOSTED BY SECTION -->
     <section class="host section">
-      <div class="host-image">
-        <img src="images/logo.jpg" alt="BAU Language Club" />
-      </div>
+      <div class="host-card">
+        <p class="host-label">ORGANIZED & HOSTED BY</p>
 
-      <div class="host-text">
-        <p class="small-title">HOSTED BY</p>
-        <h2>BAU Language Club</h2>
-        <p>
-          Add a short introduction to BAU Language Club here. You can describe
-          the club's activities and its role in organizing NLF.
+        <h2>BAU LANGUAGE CLUB (BAULC)</h2>
+
+        <p class="host-address">
+          Bangladesh Agricultural University, Mymensingh 2202
         </p>
+
+        <p class="host-description">
+          BAU Language Club works to promote linguistic skills, creativity and
+          intellectual confidence among students through the power of language.
+        </p>
+
+        <div class="host-bottom">
+          <span>Established 1961 Campus</span>
+
+          <a
+            href="https://www.facebook.com/BAULC.2020"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            See More →
+          </a>
+        </div>
       </div>
     </section>
-
     <!-- EVENT SEGMENTS -->
-    <section class="segments section" id="segments">
+    <!-- <section class="segments section" id="segments">
       <div class="section-heading">
         <p class="small-title">EXPLORE THE FESTIVAL</p>
         <h2>Our Segments</h2>
@@ -212,7 +244,7 @@
       </div>
 
       <div class="segment-grid">
-        <!-- Copy this card to add more segments. -->
+        
         <article class="segment-card">
           <div class="segment-image">Segment Image 1</div>
           <h3>Bakaron benjon</h3>
@@ -248,30 +280,157 @@
           <a href="#">View Details</a>
         </article>
       </div>
-    </section>
+    </section> -->
 
-    <!-- PROCESS -->
-    <section class="process section">
+    <!-- SEGMENTS SECTION -->
+    <section class="segments section" id="segments">
       <div class="section-heading">
-        <p class="small-title">HOW IT WORKS</p>
-        <h2>Process</h2>
+        <h2>OUR SEGMENTS</h2>
+        <p>Explore the exciting segments of National Language Feast 2026.</p>
       </div>
 
-      <div class="process-list">
-        <div class="process-step">
-          <span>01</span>
-          <h3>Complete Form</h3>
-          <p>Fill out the required form.</p>
+      <div class="segment-grid">
+        <!-- SEGMENT 01 -->
+        <div class="segment-card">
+          <p class="track-name">SEGMENT 01</p>
+          <h3>Segment Name 01</h3>
+          <p>Add your segment description here.</p>
         </div>
-        <div class="process-step">
-          <span>02</span>
-          <h3>Grab Your Pass</h3>
-          <p>Collect your event pass.</p>
+
+        <!-- SEGMENT 02 -->
+        <div class="segment-card">
+          <p class="track-name">SEGMENT 02</p>
+          <h3>Segment Name 02</h3>
+          <p>Add your segment description here.</p>
         </div>
-        <div class="process-step">
-          <span>03</span>
-          <h3>Join Event</h3>
-          <p>Join the festival and enjoy.</p>
+
+        <!-- SEGMENT 03 -->
+        <div class="segment-card">
+          <p class="track-name">SEGMENT 03</p>
+          <h3>Segment Name 03</h3>
+          <p>Add your segment description here.</p>
+        </div>
+
+        <!-- SEGMENT 04 -->
+        <div class="segment-card">
+          <p class="track-name">SEGMENT 04</p>
+          <h3>Segment Name 04</h3>
+          <p>Add your segment description here.</p>
+        </div>
+
+        <!-- SEGMENT 05 -->
+        <div class="segment-card">
+          <p class="track-name">SEGMENT 05</p>
+          <h3>Segment Name 05</h3>
+          <p>Add your segment description here.</p>
+        </div>
+
+        <!-- SEGMENT 06 -->
+        <div class="segment-card">
+          <p class="track-name">SEGMENT 06</p>
+          <h3>Segment Name 06</h3>
+          <p>Add your segment description here.</p>
+        </div>
+
+        <!-- SEGMENT 07 -->
+        <div class="segment-card">
+          <p class="track-name">SEGMENT 07</p>
+          <h3>Segment Name 07</h3>
+          <p>Add your segment description here.</p>
+        </div>
+
+        <!-- SEGMENT 08 -->
+        <div class="segment-card">
+          <p class="track-name">SEGMENT 08</p>
+          <h3>Segment Name 08</h3>
+          <p>Add your segment description here.</p>
+        </div>
+
+        <!-- SEGMENT 09 -->
+        <div class="segment-card">
+          <p class="track-name">SEGMENT 09</p>
+          <h3>Segment Name 09</h3>
+          <p>Add your segment description here.</p>
+        </div>
+
+        <!-- SEGMENT 10 -->
+        <div class="segment-card">
+          <p class="track-name">SEGMENT 10</p>
+          <h3>Segment Name 10</h3>
+          <p>Add your segment description here.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS SECTION -->
+    <section class="process-section" id="process">
+      <!-- SECTION HEADING -->
+      <div class="process-heading">
+        <h2>REGISTRATION INFO</h2>
+        <p>3-step registration process for National Language Feast 2026.</p>
+      </div>
+
+      <!-- REGISTRATION STEPS -->
+      <div class="process-grid">
+        <div class="process-card">
+          <p class="step-number">STEP 01</p>
+          <h3>COMPLETE FORM</h3>
+          <p>Fill out the registration form with your information.</p>
+        </div>
+
+        <div class="process-card">
+          <p class="step-number">STEP 02</p>
+          <h3>GRAB YOUR PASS</h3>
+          <p>Complete registration and collect your digital festival pass.</p>
+        </div>
+
+        <div class="process-card">
+          <p class="step-number">STEP 03</p>
+          <h3>JOIN EVENT</h3>
+          <p>Join the National Language Feast and enjoy the event.</p>
+        </div>
+      </div>
+
+      <!-- BOTTOM TWO BOXES -->
+      <div class="process-bottom">
+        <!-- ELIGIBILITY GUIDELINES -->
+        <div class="eligibility-box">
+          <h2>ELIGIBILITY GUIDELINES</h2>
+
+          <div class="guideline">
+            <span>✓</span>
+            <p>
+              Students currently enrolled in any university or college can
+              participate.
+            </p>
+          </div>
+
+          <div class="guideline">
+            <span>✓</span>
+            <p>
+              Participants must provide valid institutional information during
+              registration.
+            </p>
+          </div>
+
+          <div class="guideline">
+            <span>✓</span>
+            <p>
+              Students can participate individually or as a team, depending on
+              the segment.
+            </p>
+          </div>
+        </div>
+
+        <!-- READY TO COMPETE -->
+        <div class="ready-box">
+          <h2>READY TO COMPETE?</h2>
+
+          <p>Registration is now open for National Language Feast 2026.</p>
+
+          <a href="YOUR_REGISTRATION_LINK" class="registration-portal">
+            OPEN REGISTRATION PORTAL
+          </a>
         </div>
       </div>
     </section>
@@ -305,52 +464,66 @@
       </div>
     </section>
 
-    <!-- CONTACT US -->
-    <section class="contact section" id="contact">
-      <div class="section-heading">
-        <p class="small-title">GET IN TOUCH</p>
-        <h2>Contact Us</h2>
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+      <!-- SECTION HEADING -->
+      <div class="contact-heading">
+        <h2>CONTACT</h2>
+        <p>
+          Reach out to the organizing committee for queries and delegation
+          support.
+        </p>
       </div>
 
+      <!-- CONTACT CARDS -->
       <div class="contact-grid">
+        <!-- VENUE -->
         <div class="contact-card">
-          <h3>Message Us</h3>
-          <p>Send us a message on social media.</p>
-          <a href="https://www.facebook.com/BAULC.2020">Social Media Link</a>
+          <div class="contact-icon">📍</div>
+
+          <h4>VENUE</h4>
+          <h3>BAU Campus</h3>
+          <p>Mymensingh 2202, Bangladesh</p>
         </div>
+
+        <!-- EMAIL -->
         <div class="contact-card">
-          <h3>Email Us</h3>
-          <p>Contact us through email.</p>
-          <a href="mailto:baulanguageclub@gmail.com"
-            >baulanguageclub@gmail.com</a
-          >
+          <div class="contact-icon">✉</div>
+
+          <h4>EMAIL</h4>
+          <h3>General Inquiries</h3>
+          <p>
+            <a href="mailto:baulc.fest@bau.edu.bd"> baulc.fest@bau.edu.bd </a>
+          </p>
         </div>
+
+        <!-- HELPLINE -->
         <div class="contact-card">
-          <h3>Call Us</h3>
-          <p>Talk to the organizing team.</p>
-          <a href="tel:+8801950-371148">+8801950-371148</a>
+          <div class="contact-icon">☎</div>
+
+          <h4>HELPLINE</h4>
+          <h3>Committee Desk</h3>
+          <p>
+            <a href="tel:+8801700000000">+880 1700-000000</a>
+            •
+            <a href="tel:+8801800000000">+880 1800-000000</a>
+          </p>
         </div>
       </div>
     </section>
 
-    <!-- FOOTER
-    <footer class="footer">
-      <h2>National Language Feast 2026</h2>
-      <p>Hosted by BAU Language Club</p>
-      <p class="copyright">© 2026 BAU Language Club. All rights reserved.</p>
-    </footer> -->
     <!-- FOOTER -->
     <footer class="footer" id="footer">
       <div class="footer-container">
         <!-- LEFT SIDE -->
         <div class="footer-about">
           <!-- <h2 class="footer-logo">NLF'26</h2> -->
-           <a href="#home">
-        <div class="logo">
-          <img src="images/logo2.jpg" alt="NLF 2026 Logo" />
-        </div>
-        <p>NLF26</p>
-      </a>
+          <a href="#home">
+            <div class="logo">
+              <img src="images/logo2.jpg" alt="NLF 2026 Logo" />
+            </div>
+            <p>NLF26</p>
+          </a>
 
           <p>
             National Language Feast 2026, organized by BAU Language Club,
@@ -379,8 +552,6 @@
       <!-- COPYRIGHT -->
       <div class="footer-bottom">
         <p>© 2026 National Language Feast. All rights reserved.</p>
-
-        
       </div>
     </footer>
 

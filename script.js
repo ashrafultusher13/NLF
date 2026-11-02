@@ -9,7 +9,7 @@ menuButton.addEventListener("click", function () {
 // COUNTDOWN
 // Change this date when the actual event date and time are confirmed.
 // Format: Year-Month-DayTHour:Minute:Second
-const eventDate = new Date("2026-12-20T09:00:00");
+const eventDate = new Date("2026-12-04T09:00:00");
 
 function updateCountdown() {
   const now = new Date();
