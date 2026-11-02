@@ -175,11 +175,18 @@ a {
   color: green;
 }
 
-.nav-dropdown:hover .dropdown-menu {
+/* .nav-dropdown:hover .dropdown-menu {
   display: flex;
 }
 
 .nav-dropdown:hover .dropdown-toggle i {
+  transform: rotate(180deg);
+} */
+.nav-dropdown.active .dropdown-menu {
+  display: flex;
+}
+
+.nav-dropdown.active .dropdown-toggle i {
   transform: rotate(180deg);
 }
 .nav-register {

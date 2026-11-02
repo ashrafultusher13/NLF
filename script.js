@@ -38,3 +38,19 @@ function updateCountdown() {
 // Run once immediately, then update every second.
 updateCountdown();
 setInterval(updateCountdown, 1000);
+
+// DROPDOWN MENU
+const dropdown = document.querySelector(".nav-dropdown");
+const dropdownToggle = document.querySelector(".dropdown-toggle");
+
+dropdownToggle.addEventListener("click", function (e) {
+  e.preventDefault();
+  dropdown.classList.toggle("active");
+});
+
+
+document.addEventListener("click", function (e) {
+  if (!dropdown.contains(e.target)) {
+    dropdown.classList.remove("active");
+  }
+});
