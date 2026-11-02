@@ -1,10 +1,119 @@
 /* BASIC SETTINGS */
-@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
-.anton-regular {
+/* @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
+/* .anton-regular {
   font-family: "Anton", sans-serif;
   font-weight: 200;
   font-style: normal;
+} */
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +128,8 @@ html {
 body {
   font-style: normal;
   color: #20352a;
-  background-color: #edf5e9;
+  /* background-color: #edf5e9; */
+  background-color: white;
 }
 
 a {
@@ -299,7 +409,6 @@ a {
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   text-align: center;
-  /* background-color: white; */
 }
 .stat-item {
   padding: 25px;
@@ -313,6 +422,142 @@ a {
 
 .stat-item p {
   font-size: 14px;
+}
+@media (max-width: 600px) {
+  .statitems {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* TIMELINE SECTION */
+.timeline-section {
+  padding: 70px 8%;
+  background-color: white;
+}
+
+/* MAIN HEADING */
+.timeline-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.timeline-heading h2 {
+  font-size: 42px;
+}
+
+/* DAY SECTION */
+.timeline-day {
+  margin-bottom: 55px;
+}
+
+.timeline-day h3 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* EVENT LIST */
+.timeline-events {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* EACH EVENT ROW */
+.timeline-event {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  align-items: stretch;
+}
+
+/* EVENT NAME BOX */
+.event-name {
+  background-color: #f5f8fa;
+  border: 1px solid #dce3e9;
+  border-radius: 12px;
+
+  min-height: 110px;
+  padding: 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.event-name h4 {
+  font-size: 20px;
+}
+
+/* TIME AND VENUE BOX */
+.event-details {
+  background-color: #f5f8fa;
+  border: 1px solid #dce3e9;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* TIME AND VENUE ROW */
+.event-details div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  padding: 16px 25px;
+  min-height: 55px;
+}
+
+/* LINE BETWEEN TIME AND VENUE */
+.event-details div:first-child {
+  border-bottom: 1px solid #e5eaf0;
+}
+
+/* ICONS */
+.event-details i {
+  color: #bd751b;
+  font-size: 20px;
+  width: 22px;
+  text-align: center;
+}
+
+/* TIME AND VENUE TEXT */
+.event-details span {
+  color: #555;
+  font-size: 16px;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 600px) {
+  .timeline-section {
+    padding: 45px 5%;
+  }
+
+  .timeline-heading h2 {
+    font-size: 32px;
+  }
+
+  .timeline-day h3 {
+    font-size: 24px;
+  }
+
+  .timeline-event {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .event-name {
+    min-height: 80px;
+    padding: 18px;
+  }
+
+  .event-name h4 {
+    font-size: 17px;
+  }
+
+  .event-details div {
+    padding: 13px 18px;
+  }
 }
 /* SPONSOR SECTION */
 .sponsors {
@@ -1104,6 +1349,10 @@ a {
   font-size: 25px;
   color: #bd751b;
   margin-bottom: 10px;
+}
+.contact-icon i {
+  font-size: 21px;
+  color: #bd751b;
 }
 
 /* CARD HEADING */
